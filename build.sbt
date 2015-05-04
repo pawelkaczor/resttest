@@ -11,7 +11,7 @@ scalaVersion := "2.11.5"
 
 resolvers += "typesafe repo" at "http://repo.typesafe.com/typesafe/releases/"
 
-resolvers += "spray repo" at "http://repo.spray.io/"
+//resolvers += "spray repo" at "http://repo.spray.io/"
 
 publishMavenStyle := true
 

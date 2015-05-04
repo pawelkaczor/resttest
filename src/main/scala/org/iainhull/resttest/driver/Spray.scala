@@ -1,5 +1,6 @@
 package org.iainhull.resttest.driver
 
+/*
 import spray.testkit.ScalatestRouteTest
 import org.iainhull.resttest.TestDriver
 import org.scalatest.Suite
@@ -43,4 +44,4 @@ trait SprayUnitTestDriver extends TestDriver with ScalatestRouteTest {
   
   def actorRefFactory = system
   def myRoute: Route
-}
+}*/
