@@ -5,9 +5,9 @@ name := "resttest"
 
 organization := "pl.newicom"
 
-version := "0.2.0-SNAPSHOT"
+version := "0.2.0"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.11.6"
 
 resolvers += "typesafe repo" at "http://repo.typesafe.com/typesafe/releases/"
 
