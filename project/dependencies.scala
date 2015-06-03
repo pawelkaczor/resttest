@@ -4,7 +4,7 @@ object Dependencies {
   val jerseyVersion = "1.17.+"
   val scalatestVersion = "2.2.4"
   //val sprayVersion = "1.3.2"
-  val playVersion = "2.3.4"
+  val playVersion = "2.3.9"
 
   val jersey = "com.sun.jersey" % "jersey-core" % jerseyVersion
   val jerseyClient = "com.sun.jersey" % "jersey-client" % jerseyVersion
