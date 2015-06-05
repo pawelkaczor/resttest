@@ -1,7 +1,7 @@
 import sbt._
 
 object Dependencies {
-  val jerseyVersion = "1.17.+"
+  val jerseyVersion = "1.19"
   val scalatestVersion = "2.2.4"
   //val sprayVersion = "1.3.2"
   val playVersion = "2.3.9"
