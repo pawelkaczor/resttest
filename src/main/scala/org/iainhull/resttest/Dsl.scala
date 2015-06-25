@@ -113,6 +113,7 @@ trait Dsl extends Api with Extractors {
     def :?(params: (Symbol, Any)*) = builder.addQuery(params map (p => (p._1.name, p._2.toString)): _*)
 
     def execute()(implicit client: HttpClient): Response = {
+      println("Request: " + builder.toRequest)
       client(builder)
     }
 
