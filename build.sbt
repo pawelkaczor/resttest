@@ -5,7 +5,7 @@ name := "resttest"
 
 organization := "pl.newicom"
 
-version := "0.3.0-SNAPSHOT"
+version := "0.3.0"
 
 homepage := Some(new java.net.URL("http://github.com/pawelkaczor/resttest"))
 
