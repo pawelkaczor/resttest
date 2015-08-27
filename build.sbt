@@ -5,13 +5,13 @@ name := "resttest"
 
 organization := "pl.newicom"
 
-version := "0.3.0"
+version := "0.3.1"
 
 homepage := Some(new java.net.URL("http://github.com/pawelkaczor/resttest"))
 
 licenses := ("Apache2", new java.net.URL("http://www.apache.org/licenses/LICENSE-2.0.txt")) :: Nil
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 resolvers += "typesafe repo" at "http://repo.typesafe.com/typesafe/releases/"
 
