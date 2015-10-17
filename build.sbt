@@ -1,5 +1,5 @@
-import sbtrelease.ReleasePlugin._
 import Dependencies._
+import java.net.URL
 
 name := "resttest"
 
@@ -7,9 +7,9 @@ organization := "pl.newicom"
 
 version := "0.3.1"
 
-homepage := Some(new java.net.URL("http://github.com/pawelkaczor/resttest"))
+homepage := Some(new URL("http://github.com/pawelkaczor/resttest"))
 
-licenses := ("Apache2", new java.net.URL("http://www.apache.org/licenses/LICENSE-2.0.txt")) :: Nil
+licenses := ("Apache2", new URL("http://www.apache.org/licenses/LICENSE-2.0.txt")) :: Nil
 
 scalaVersion := "2.11.7"
 
@@ -23,4 +23,4 @@ dependencyOverrides += "org.slf4j" % "slf4j-api" % "1.7.2"
 
 parallelExecution in Test := false
 
-Publish.settings ++ releaseSettings
+Publish.settings
