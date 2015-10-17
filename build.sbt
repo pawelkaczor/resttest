@@ -5,7 +5,7 @@ name := "resttest"
 
 organization := "pl.newicom"
 
-version := "0.3.1"
+version := "0.3.2"
 
 homepage := Some(new URL("http://github.com/pawelkaczor/resttest"))
 
