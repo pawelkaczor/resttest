@@ -1,9 +1,12 @@
 package org.iainhull.resttest
 
+import org.scalactic.Prettifier
+import org.scalactic.source.Position
 import org.scalatest.Matchers.AnyShouldWrapper
 import org.scalatest.matchers.HavePropertyMatcher
 import org.scalatest.matchers.HavePropertyMatchResult
 import org.scalatest.Assertions
+
 import scala.util.Success
 
 /**
@@ -55,7 +58,7 @@ trait RestMatchers {
    * This adds support for ScalaTest's `ShouldMatchers` to `Response`
    */
   implicit def responseToShouldWrapper(response: Response): AnyShouldWrapper[Response] = {
-    new AnyShouldWrapper(response)
+    new AnyShouldWrapper(response, Position.here, Prettifier.default)
   }
 
   implicit def methodToShouldWrapper(method: Method)(implicit builder: RequestBuilder, client: HttpClient): AnyShouldWrapper[Response] = {
@@ -65,7 +68,7 @@ trait RestMatchers {
   implicit def extractorToShouldWrapper[T](extractor: ExtractorLike[T])(implicit response: Response): AnyShouldWrapper[T] = {
     Assertions.withClue(extractor.name) {
       val v: T = extractor.value.get
-      new AnyShouldWrapper[T](v)
+      new AnyShouldWrapper[T](v, Position.here, Prettifier.default)
     }
   }  
   

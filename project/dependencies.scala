@@ -2,7 +2,7 @@ import sbt._
 
 object Dependencies {
   val jerseyVersion = "1.19"
-  val scalatestVersion = "2.2.4"
+  val scalatestVersion = "3.0.0"
   val playVersion = "2.4.3"
 
   val jersey = "com.sun.jersey" % "jersey-core" % jerseyVersion
