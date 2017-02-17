@@ -5,13 +5,16 @@ name := "resttest"
 
 organization := "pl.newicom"
 
-version := "0.3.3"
+version := "0.4.0"
 
 homepage := Some(new URL("http://github.com/pawelkaczor/resttest"))
 
 licenses := ("Apache2", new URL("http://www.apache.org/licenses/LICENSE-2.0.txt")) :: Nil
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
+crossScalaVersions := Seq("2.12.1", "2.11.8")
+
+scalaVersion in Test:= "2.11.8"
 
 resolvers += "typesafe repo" at "http://repo.typesafe.com/typesafe/releases/"
 

@@ -13,5 +13,5 @@ object Dependencies {
   val playJson = "com.typesafe.play" %% "play-json" % playVersion % "test"
 
 
-  val resttestDependencies = Seq(jersey, jerseyClient, scalatest, playJson)
+  val resttestDependencies = Seq(jersey, jerseyClient, scalatest/*, playJson*/)
 }
